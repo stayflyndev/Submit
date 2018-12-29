@@ -64,7 +64,7 @@ main {
 
 .btn {
     padding: 0.5rem 2rem;
-    border: 1px #ccc solid;
+    border: 1px #888 solid;
     display: inline-block;
     margin: 2rem 0 0;
     border-radius: 50px;
@@ -74,7 +74,22 @@ main {
 }
 
 .btn:hover {
-    background: #f4f4f4;
+    background: gray;
+}
+
+.btn2 {
+    padding: 0.5rem 2rem;
+    border: 1px #888 solid;
+    display: inline-block;
+    margin: 1rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn2:hover {
+    background: gray;
 }
 
 #header {
@@ -128,6 +143,9 @@ footer h3 {
 /* Screen Sizes 700px and Up */
 @media(min-width: 700px) {
     .btn {
+        padding: 1rem 3rem;
+    }
+    .btn2 {
         padding: 1rem 3rem;
     }
 }
