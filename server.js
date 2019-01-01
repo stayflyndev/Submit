@@ -37,7 +37,7 @@ app.post('/contact', function (req, res)
         secure: true, // true for 465, false for other ports
         auth: {
             type: "OAuth2",
-            user: "torir.adams@gmail.com", // generated ethereal user
+            user: ".com", // generated ethereal user
             // generated ethereal password
             clientId: "642386995386-6s6tpdktu7gpn3ecq5m01gtfr9vu7knq.apps.googleusercontent.com",
             clientSecret: '7ZVk9NNEqzvY6d_pQltXxLTn',
@@ -48,8 +48,8 @@ app.post('/contact', function (req, res)
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"info mailer" <info@yourtechsis.com>', // sender address
-        to: 'info@yourtechsis.com', // list of receivers
+        from: '"info mailer" <info@yocom>', // sender address
+        to: 'info@echsis.com', // list of receivers
         subject: 'new message ✔', // Subject line
         text: req.body.message, // plain text body
         html: '<b>Hello world?</b>' // html body
