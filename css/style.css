@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+{@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
@@ -112,6 +112,10 @@ main {
     text-align: center;
 }
 
+#contact{
+    background-color: red;
+}
+
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -148,4 +152,8 @@ footer h3 {
     .btn2 {
         padding: 1rem 3rem;
     }
+}
+
+#images{
+    background-color: red;
 }

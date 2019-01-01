@@ -8,11 +8,10 @@ $('#view-work').on('click', function() {
    );
 });
 
-$('#contact').on('click', function () {
-    const contact = $('#contact').postion().bottom;
-
+$('#footer').on('click', function () {
+    const contact = $('#contact').position().bottom;
     $('html, body').animate({
        scrollBottom: contact
-    }, 900
+    }, 90
     );
 });

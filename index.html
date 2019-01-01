@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
     <title>DJ TOPCAT PRODUCTIONS</title>
 </head>
 
@@ -14,12 +18,12 @@
       <div id="landing">
           <div id="landing-text">
               <div id="landing-text-inner">
-                  <h1>DJ TOPCAT</h1>
+                  <h1>Node BUILT</h1>
                   <h3>Life of the Party!</h3>
                   <a href="#images" class="btn" id="view-work">
                       View Work
                   </a>
-                <a href="#contact" class="btn2" id="contact">
+                <a href="#contact" class="btn2" id="footer">
                     Contact
                     </a>
               </div>
@@ -28,51 +32,44 @@
       </div>
 
       <div id="images">
-          <div id="header">
-              <h2>My Work</h2>
-          </div>
+         
 
-          <img src="https://source.unsplash.com/1600x900/?party,music" alt="">
-          <div class="caption">
-            <h3>Photo One</h3>
-            <p>Need a professional that has a wide variety of your favorite tunes for get together I'm the guy!</p>  
-          </div>
-          <img src="https://source.unsplash.com/1600x900/?party,wedding" alt="">
-          <div class="caption">
-            <h3>Photo Two</h3>
-            <p>Need a professional that has a wide variety of your favorite tunes for get together I'm the guy!</p>  
-          </div>
-          <img src="https://source.unsplash.com/1600x900/?party,club" alt="">
-          <div class="caption">
-            <h3>Photo Three</h3>
-            <p>Need a professional that has a wide variety of your favorite tunes for get together I'm the guy!</p>  
-          </div>
-          <img src="https://source.unsplash.com/1600x900/?party,gathering" alt="">
-          <div class="caption">
-            <h3>Photo Four</h3>
-            <p>Need a professional that has a wide variety of your favorite tunes for get together I'm the guy!</p>  
-          </div>
-          <img src="https://source.unsplash.com/1600x900/?party,block party" alt="">
-          <div class="caption">
-            <h3>Photo Five</h3>
-            <p>Need a professional that has a wide variety of your favorite tunes for get together I'm the guy!</p>  
-          </div>
+          <div id="contact" id="footer">
+
+                <form action="/contact" id="contact-form" method="post" role="form">
+                    <fieldset>
+                      <label for="name">Name &#42;</label>
+                      <input id="name" name="name" type="text" placeholder="Your name" required="required">
+                      <label for="email">Email &#42;</label>
+                      <input id="email" name="email" type="text" placeholder="Your email" required="required">
+                      <label for="message">Message &#42;</label>
+                      <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
+                      <button type="submit">Submit</button>
+                    </fieldset>
+                  </form>
+                      
+                <footer id="footer">
+
+                    
+
+                    
       </div>
   </main>  
-
+<!-- 
+  <div id="footer">
   <footer>
       <h3>Get In Touch</h3>
       <p>Email or call to set up a consult</p>
       <p>Email: <strong>Enter email here</strong></p>
       <p>Phone: <strong>Enter phone number here</strong></p>
   </footer>
+  </div> -->
 
   <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>
