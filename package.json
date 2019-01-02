@@ -1,0 +1,27 @@
+{
+  "name": "no",
+  "version": "1.0.0",
+  "description": "Creating a website for my dad's dj business\r Feel free to use the template I have if you want to create something of your own. You must add your own photos.\r If there's any suggestions to make it look cleaner or overall make it a more interesting site please to push something my way.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "nodemailer": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcovington16/DJ-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcovington16/DJ-Website/issues"
+  },
+  "homepage": "https://github.com/jcovington16/DJ-Website#readme"
+}
