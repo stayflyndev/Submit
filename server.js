@@ -16,13 +16,18 @@ app.get('/', function(req, res) {
 });
 
 
-const clientID = process.env.AUTH_USER;
+
 
 const authuser = process.env.AUTH_USER;
-const authclient = process.env.AUTH_CLIENT;
+const authclient = process.env.AUTH_CLIENTID;
+const clientsecret = process.env.AUTH_SECRET;
+
+const clientrefresh = process.env.AUTH_REFRESH;
+
 
 app.listen(8080);
 console.log(" listening on port");
+
 
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
@@ -37,19 +42,19 @@ app.post('/contact', function (req, res)
         secure: true, // true for 465, false for other ports
         auth: {
             type: "OAuth2",
-            user: ".com", // generated ethereal user
+            user: authuser, // generated ethereal user
             // generated ethereal password
-            clientId: "642386995386-6s6tpdktu7gpn3ecq5m01gtfr9vu7knq.apps.googleusercontent.com",
-            clientSecret: '7ZVk9NNEqzvY6d_pQltXxLTn',
-            refreshToken: '1/N3DbXki-3wL7i8li24JTDd2_JwWA-OWzvMDD3wzecO8'
+            clientId: authclient,
+            clientSecret: clientsecret,
+            refreshToken: clientrefresh
 
         }
     });
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"info mailer" <info@yocom>', // sender address
-        to: 'info@echsis.com', // list of receivers
+        from: '"info mailer" <info@yourtechsis.com>', // sender address
+        to: 'info@yourtechsis.com', // list of receivers
         subject: 'new message ✔', // Subject line
         text: req.body.message, // plain text body
         html: '<b>Hello world?</b>' // html body
