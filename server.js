@@ -29,7 +29,6 @@ const clientrefresh = process.env.NODEMAILER_REFRESH;
 
 app.listen(process.env.PORT || 8080);
 console.log(" listening on port");
-console.log(authclient);
 
 
 // Generate test SMTP service account from ethereal.email
