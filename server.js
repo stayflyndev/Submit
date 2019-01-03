@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
+
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -19,14 +21,15 @@ app.get('/', function(req, res) {
 
 
 const authuser = process.env.AUTH_USER;
-const authclient = process.env.AUTH_CLIENTID;
-const clientsecret = process.env.AUTH_SECRET;
+const authclient = process.env.NODEMAILER_CLIENT;
+const clientsecret = process.env.NODEMAILER_SECRECT;
 
-const clientrefresh = process.env.AUTH_REFRESH;
+const clientrefresh = process.env.NODEMAILER_REFRESH;
 
 
 app.listen(process.env.PORT || 8080);
 console.log(" listening on port");
+console.log(authclient);
 
 
 // Generate test SMTP service account from ethereal.email
